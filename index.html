@@ -3,9 +3,15 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TODAH Design — Sample Layout</title>
+<title>TODAH 153 | Interior Design & Construction</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,400&family=Noto+Serif+KR:wght@300;400;500&display=swap"/>
 <link rel="stylesheet" href="assets/css/style.css"/>
-<meta name="description" content="TODAH Design landing page sample with curated project photos."/>
+<link rel="stylesheet" href="assets/css/hero-motion.css"/>
+<meta name="description" content="TODAH 153 — 인테리어 디자인 & 시공"/>
+<!-- TODO: 사이트 완성되어 정식 공개할 때 이 줄과 robots.txt의 Disallow를 제거하세요 -->
+<meta name="robots" content="noindex, nofollow"/>
 </head>
 <body>
 <header>
@@ -15,7 +21,7 @@
     </a>
     <nav class="menu">
       <a href="#project">PROJECT</a>
-      <a href="#about">ABOUT</a>
+      <!-- TODO: About 페이지가 백엔드 작업으로 생기면 여기에 href="/about" 링크 추가 -->
       <a href="#instagram">INSTAGRAM</a>
       <a href="#journal">JOURNAL</a>
       <a href="#contact">CONTACT</a>
@@ -27,12 +33,16 @@
 
 <section class="hero wrap">
   <div class="hero-media" id="heroCarousel">
-    <div class="hero-slide active"><img src="assets/images/hero-01.jpg" alt="Living room sample"/></div>
-    <div class="hero-slide"><img src="assets/images/hero-02.jpg" alt="Kitchen sample"/></div>
-    <div class="hero-slide"><img src="assets/images/hero-03.jpg" alt="Entry sample"/></div>
-    <div class="hero-caption">RECENT PROJECTS · 01 / 03</div>
+    <div class="hero-slide active"><img src="assets/images/sanun-living.jpg" alt="Pangyo Sanun Residence living room"/><div class="hero-text"><span class="line tag"><span>PANGYO · 38PY</span></span><span class="line title"><span>우드와 화이트,</span></span><span class="line title"><span>두 톤으로 완성한 집</span></span></div></div>
+    <div class="hero-slide"><img src="assets/images/hero-02.jpg" alt="Pangyo Sanun Residence kitchen"/><div class="hero-text"><span class="line tag"><span>KITCHEN</span></span><span class="line title"><span>동선이 편한</span></span><span class="line title"><span>아일랜드 주방</span></span></div></div>
+    <div class="hero-slide"><img src="assets/images/hero-01.jpg" alt="Pangyo Sanun Residence living room window"/><div class="hero-text"><span class="line tag"><span>LIVING</span></span><span class="line title"><span>창 너머 풍경까지</span></span><span class="line title"><span>공간이 되도록</span></span></div></div>
+    <div class="hero-slide"><img src="assets/images/project-02.jpg" alt="Kitchen detail"/><div class="hero-text"><span class="line tag"><span>DETAIL</span></span><span class="line title"><span>작은 마감까지</span></span><span class="line title"><span>같은 완성도로</span></span></div></div>
+    <div class="hero-slide"><img src="assets/images/project-04.jpg" alt="Wood wall"/><div class="hero-text"><span class="line tag"><span>MATERIAL</span></span><span class="line title"><span>소재가 가진 결을</span></span><span class="line title"><span>그대로 살려</span></span></div></div>
+    <div class="hero-caption">RECENT PROJECTS · 01 / 05</div>
     <div class="hero-dots" aria-hidden="true">
       <span class="hero-dot active"></span>
+      <span class="hero-dot"></span>
+      <span class="hero-dot"></span>
       <span class="hero-dot"></span>
       <span class="hero-dot"></span>
     </div>
@@ -40,7 +50,7 @@
   <div class="hero-copy">
     <div>
       <div class="kicker">INTERIOR DESIGN & CONSTRUCTION</div>
-      <h1>Spaces designed<br>for living.</h1>
+      <h1>Where you live.<br>Where you work.</h1>
     </div>
     <a class="link" href="#project">VIEW RECENT WORKS →</a>
   </div>
@@ -50,26 +60,26 @@
   <div class="project-lead">
     <div class="copy">
       <div class="section-title" style="margin-bottom:0">RECENT WORKS</div>
-      <h2>최근 작업 기준으로<br>메인에는 5개만 보여줍니다.</h2>
-      <p>메인 랜딩페이지에서는 최신 프로젝트 중심으로 5개만 선별 노출하고, 나머지 사진과 자료는 각 프로젝트 상세페이지와 아카이브에서 확장하는 구조로 구성했습니다.</p>
+      <h2>공간마다 다른 이야기,<br>같은 완성도로 마무리합니다.</h2>
+      <p>주거부터 상업 공간까지, 각 공간이 가진 조건과 생활 방식을 먼저 이해하고 그에 맞는 디자인과 시공으로 완성했습니다.</p>
     </div>
-    <div class="badge">LATEST 05 · SAMPLE CURATION</div>
+    <div class="badge">LATEST 05</div>
   </div>
 
   <div class="feature-grid">
     <article class="feature-image">
-      <img src="assets/images/hero-01.jpg" alt="Gwanggyo Residence living room"/>
+      <img src="assets/images/sanun-living.jpg" alt="Pangyo Sanun Residence living room"/>
       <div class="meta">
-        <div class="name">Gwanggyo Residence<br/>Living Room</div>
-        <div class="info">RESIDENTIAL · 42PY</div>
+        <div class="name">Pangyo Sanun Residence<br/>Living Room</div>
+        <div class="info">RESIDENTIAL · 38PY</div>
       </div>
     </article>
 
     <div class="feature-side">
       <article class="card">
-        <img src="assets/images/project-02.jpg" alt="Kitchen detail"/>
+        <img src="assets/images/hero-02.jpg" alt="Kitchen"/>
         <div class="meta">
-          <div class="name">Kitchen Detail</div>
+          <div class="name">Kitchen</div>
           <div class="info">WOOD & STONE</div>
         </div>
       </article>
@@ -85,43 +95,33 @@
       <article class="card">
         <img src="assets/images/project-04.jpg" alt="Wall finish"/>
         <div class="meta">
-          <div class="name">Concealed Wall Finish</div>
+          <div class="name">Wood Wall</div>
           <div class="info">WARM MINIMAL</div>
         </div>
       </article>
 
       <article class="card">
-        <img src="assets/images/hero-02.jpg" alt="Kitchen wide view"/>
+        <img src="assets/images/hero-01.jpg" alt="Living room"/>
         <div class="meta">
-          <div class="name">Kitchen Wide View</div>
-          <div class="info">OPEN PLAN</div>
+          <div class="name">Living Room</div>
+          <div class="info">AMBIENT LIGHT</div>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<section id="about" class="wrap about">
-  <div>
-    <div class="section-title">ABOUT TODAH</div>
-    <div class="about-mark">TODAH</div>
-    <div class="hebrew">תודה</div>
-  </div>
-  <div class="about-copy">
-    TODAH는 히브리어로 <strong>‘감사’</strong>를 뜻합니다.<br><br>
-    공간을 맡겨주신 마음에 감사하며, 좋은 디자인과 완성도 있는 시공으로 그 마음에 답하고자 합니다.
-    <div class="about-small">메인에서는 작업의 분위기를 먼저 보여주고, 상세페이지에서 공간별 설명, 디테일, 공정 흐름, Before/After, 더 많은 사진을 차분하게 확장하는 구조를 추천합니다.</div>
-  </div>
-</section>
-
+<!-- ABOUT 섹션은 랜딩페이지에서 제외. 별도 About 페이지로 백엔드 작업 때 구성 예정. -->
+<!-- THE LDB SYSTEM(LISTEN·DESIGN·BUILD)도 랜딩페이지에서 제외, About 페이지에 함께 구성 예정.
 <section class="wrap">
-  <div class="section-title">OUR APPROACH</div>
+  <div class="section-title">THE LDB SYSTEM</div>
   <div class="approach">
-    <div><div class="num">01</div><h3>CURATE</h3><p>많은 사진을 그대로 나열하지 않고 대표컷, 디테일컷, 공정컷으로 선별합니다.</p></div>
-    <div><div class="num">02</div><h3>COMPOSE</h3><p>메인, 프로젝트 상세, 인스타 피드, 스토리용으로 각 채널에 맞는 배치와 비율을 구성합니다.</p></div>
-    <div><div class="num">03</div><h3>CONNECT</h3><p>홈페이지 포트폴리오와 인스타그램 피드가 하나의 운영 흐름으로 이어지도록 설계합니다.</p></div>
+    <div><div class="num">01</div><h3>LISTEN</h3><p>공간을 쓰실 분의 생활 방식과 취향을 먼저 듣는 것에서 시작합니다.</p></div>
+    <div><div class="num">02</div><h3>DESIGN</h3><p>구조, 채광, 동선을 고려해 그 공간에 맞는 설계로 풀어냅니다.</p></div>
+    <div><div class="num">03</div><h3>BUILD</h3><p>작은 마감 하나까지 놓치지 않고 완성도 있게 시공합니다.</p></div>
   </div>
 </section>
+-->
 
 <section class="wrap">
   <div class="section-title">PROJECT HIGHLIGHTS</div>
@@ -129,7 +129,7 @@
     <article class="highlight">
       <img src="assets/images/project-04.jpg" alt="Wood wall"/>
       <small>HIGHLIGHT 01</small>
-      <div class="title">우드 월 마감과 히든 도어 처리</div>
+      <div class="title">우드 월 마감과 천장 간접조명</div>
     </article>
     <article class="highlight">
       <img src="assets/images/highlight-02.jpg" alt="Corridor"/>
@@ -142,11 +142,15 @@
 <section class="wrap">
   <div class="section-title">PROCESS</div>
   <div class="process">
-    <div class="process-item"><span>01</span><h4>Photo Sorting</h4><p>원본 사진을 대표컷, 디테일, 공정컷으로 분류합니다.</p></div>
-    <div class="process-item"><span>02</span><h4>Select Main Cuts</h4><p>메인에 노출할 5개의 대표 이미지와 메인 슬라이드를 선정합니다.</p></div>
-    <div class="process-item"><span>03</span><h4>Project Detail</h4><p>상세페이지용 흐름과 설명 문장을 구성합니다.</p></div>
-    <div class="process-item"><span>04</span><h4>Instagram Feed</h4><p>피드, 스토리, 카드뉴스용 비율로 재편집합니다.</p></div>
-    <div class="process-item"><span>05</span><h4>Archive</h4><p>전체 프로젝트와 사용하지 않은 컷은 아카이브에 축적합니다.</p></div>
+    <div class="process-item"><span>01</span><h4>상담 · 현장 실측</h4><p>공간을 직접 둘러보고 원하시는 방향과 예산을 함께 조율합니다.</p></div>
+    <div class="process-item"><span>02</span><h4>설계 · 견적</h4><p>실측 데이터를 바탕으로 도면과 상세 견적을 제안드립니다.</p></div>
+    <div class="process-item"><span>03</span><h4>자재 · 시공 계획</h4><p>공간의 톤에 맞는 자재를 선정하고 공정 일정을 확정합니다.</p></div>
+    <div class="process-item"><span>04</span><h4>시공 · 현장 관리</h4><p>주요 공정마다 현장을 점검하며 완성도를 확인합니다.</p></div>
+    <div class="process-item"><span>05</span><h4>준공 · 사후 관리</h4><p>입주 후에도 하자 보수와 문의에 성실히 응대합니다.</p></div>
+  </div>
+  <div class="process-cta">
+    <p>진행 과정에 대해 더 궁금한 점이 있으신가요?</p>
+    <a class="link" data-mail-template href="mailto:todahid153@gmail.com">이메일로 문의하기 →</a>
   </div>
 </section>
 
@@ -154,40 +158,36 @@
   <div class="instagram-head">
     <div>
       <div class="section-title" style="margin-bottom:12px">FOLLOW OUR WORK</div>
-      <p>INSTAGRAM · @todah_153</p>
+      <p class="insta-handle">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.8"/>
+          <circle cx="12" cy="12" r="4.6" stroke="currentColor" stroke-width="1.8"/>
+          <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/>
+        </svg>
+        INSTAGRAM · @todah_153
+      </p>
     </div>
   </div>
-  <div class="insta-grid" data-instagram-feed data-exclude-stories="true">
-    <a href="https://www.instagram.com/todah_153/" target="_blank" rel="noopener">
-      <img data-instagram-thumb alt="" hidden>
-      <span><time data-instagram-date datetime=""></time></span>
-    </a>
-    <a href="https://www.instagram.com/todah_153/" target="_blank" rel="noopener">
-      <img data-instagram-thumb alt="" hidden>
-      <span><time data-instagram-date datetime=""></time></span>
-    </a>
-    <a href="https://www.instagram.com/todah_153/" target="_blank" rel="noopener">
-      <img data-instagram-thumb alt="" hidden>
-      <span><time data-instagram-date datetime=""></time></span>
-    </a>
-    <a href="https://www.instagram.com/todah_153/" target="_blank" rel="noopener">
-      <img data-instagram-thumb alt="" hidden>
-      <span><time data-instagram-date datetime=""></time></span>
-    </a>
-    <a href="https://www.instagram.com/todah_153/" target="_blank" rel="noopener">
-      <img data-instagram-thumb alt="" hidden>
-      <span><time data-instagram-date datetime=""></time></span>
-    </a>
-    <a href="https://www.instagram.com/todah_153/" target="_blank" rel="noopener">
-      <img data-instagram-thumb alt="" hidden>
-      <span><time data-instagram-date datetime=""></time></span>
+  <div class="insta-embed-grid" data-instagram-feed>
+    <a class="insta-icon-link" href="https://www.instagram.com/todah_153/" target="_blank" rel="noopener noreferrer" aria-label="Instagram에서 TODAH 153 보기">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.6"/>
+        <circle cx="12" cy="12" r="4.6" stroke="currentColor" stroke-width="1.6"/>
+        <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/>
+      </svg>
+      <span>OPEN INSTAGRAM →</span>
     </a>
   </div>
 </section>
 
 <section id="journal" class="wrap">
-  <div class="section-title">JOURNAL</div>
-  <div class="journal-grid">
+  <div class="instagram-head">
+    <div>
+      <div class="section-title" style="margin-bottom:12px">JOURNAL</div>
+      <p><a href="https://blog.naver.com/ceomaker" target="_blank" rel="noopener noreferrer">NAVER BLOG · 토다153 디자인 →</a></p>
+    </div>
+  </div>
+  <div class="journal-grid" data-journal-feed>
     <article class="journal-card">
       <img src="assets/images/project-02.jpg" alt="Journal 1"/>
       <div class="journal-cat">PROJECT NOTE</div>
@@ -211,14 +211,101 @@
 
 <section id="contact" class="contact wrap">
   <div class="section-title">CONTACT</div>
+  <div class="contact-tag">상담문의</div>
   <h2>공간에 대해<br/>이야기해주세요.</h2>
-  <p>전화, 카카오톡, 이메일 세 가지 채널만 남기고 상담 동선을 단순하게 유지합니다.</p>
+  <p>사용하시는 방법으로 편하게 문의 주세요. 빠르게 확인하고 답변드리겠습니다.</p>
   <div class="contact-links">
-    <a href="#">CALL →</a>
-    <a href="#">KAKAO TALK →</a>
-    <a href="#">E-MAIL →</a>
+    <a href="#" data-open-contact-modal>문의하기 →</a>
+    <a href="https://pf.kakao.com/_xcVUaX/chat" id="kakaoLink" target="_blank" rel="noopener noreferrer">KAKAO TALK →</a>
+    <a data-mail-template href="mailto:todahid153@gmail.com">E-MAIL →</a>
   </div>
 </section>
+
+<div class="modal-overlay" id="contactModalOverlay" hidden>
+  <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+    <button type="button" class="modal-close" data-close-contact-modal aria-label="닫기">✕</button>
+    <h3 id="contactModalTitle">TODAH 153 인테리어 상담 신청</h3>
+
+    <form id="contactForm" novalidate>
+      <div class="contact-field">
+        <label>공간 유형</label>
+        <div class="radio-row">
+          <label class="radio-option"><input type="radio" name="spaceType" value="상업공간" required/> 상업공간</label>
+          <label class="radio-option"><input type="radio" name="spaceType" value="주거공간" required/> 주거공간</label>
+        </div>
+      </div>
+
+      <div class="contact-form-row">
+        <div class="contact-field">
+          <label for="cf-size">평형</label>
+          <input type="number" id="cf-size" name="size" min="1" step="1" placeholder="예: 32" required/>
+        </div>
+        <div class="contact-field">
+          <label for="cf-budget">예산 (원)</label>
+          <input type="number" id="cf-budget" name="budget" min="0" step="1" placeholder="예상 예산을 입력해주세요" required/>
+        </div>
+      </div>
+
+      <div class="contact-field">
+        <label for="cf-address">현장 주소</label>
+        <input type="text" id="cf-address" name="address" placeholder="시공 예정 현장 주소를 입력해주세요" required maxlength="200"/>
+      </div>
+
+      <div class="contact-form-row">
+        <div class="contact-field">
+          <label for="cf-name">이름</label>
+          <input type="text" id="cf-name" name="name" placeholder="이름을 입력해주세요" required maxlength="60"/>
+        </div>
+        <div class="contact-field">
+          <label for="cf-contact">연락처</label>
+          <input type="text" id="cf-contact" name="contact" placeholder="010-0000-0000" required maxlength="60"/>
+        </div>
+      </div>
+
+      <div class="contact-field">
+        <label for="cf-email">이메일</label>
+        <input type="email" id="cf-email" name="email" placeholder="example@email.com" required maxlength="120"/>
+      </div>
+
+      <div class="contact-field">
+        <label>공사 범위</label>
+        <div class="radio-row">
+          <label class="radio-option"><input type="radio" name="scope" value="전체공사" required/> 전체공사</label>
+          <label class="radio-option"><input type="radio" name="scope" value="부분공사" required/> 부분공사</label>
+        </div>
+      </div>
+
+      <div class="contact-form-row">
+        <div class="contact-field">
+          <label for="cf-start-date">공사 예정일</label>
+          <input type="date" id="cf-start-date" name="startDate" required/>
+        </div>
+        <div class="contact-field">
+          <label for="cf-end-date">공사 마감일</label>
+          <input type="date" id="cf-end-date" name="endDate"/>
+          <label class="checkbox-option">
+            <input type="checkbox" id="cf-end-date-tbd" name="endDateTBD"/> 미정
+          </label>
+        </div>
+      </div>
+
+      <div class="contact-field">
+        <label for="cf-content">공사 내용</label>
+        <textarea id="cf-content" name="content" rows="4" placeholder="원하시는 공사 내용을 자유롭게 작성해주세요" required maxlength="3000"></textarea>
+      </div>
+
+      <div class="contact-field">
+        <label for="cf-photos">참고 사진 (포트폴리오/현장 사진)</label>
+        <input type="file" id="cf-photos" name="photos" accept="image/*" multiple/>
+        <span class="field-hint">이미지 파일, 최대 10장, 장당 10MB</span>
+      </div>
+
+      <div class="contact-hp" aria-hidden="true"><label>웹사이트<input type="text" name="website" tabindex="-1" autocomplete="off"/></label></div>
+      <button type="submit" class="contact-submit">상담 신청하기 →</button>
+      <p class="contact-form-status" id="contactFormStatus" role="status"></p>
+    </form>
+  </div>
+</div>
 
 </main>
 
@@ -229,31 +316,32 @@
         <img class="footer-logo" src="assets/images/logo.png" alt="TODAH 153"/>
         <div class="footer-info">
           INTERIOR DESIGN & CONSTRUCTION<br><br>
-          TODAH DESIGN<br>
-          대표자 · 사업자번호<br>
-          주소<br>
-          TEL · EMAIL
+          TODAH 153 (토다153디자인)<br>
+          대표자 임채일 · 사업자등록번호 433-10-00193<br>
+          경기도 수원시 팔달구 경수대로 619-5, 102호(지동, 반석빌라)<br>
+          E-MAIL · <a data-mail-template href="mailto:todahid153@gmail.com">todahid153@gmail.com</a>
         </div>
       </div>
       <div class="footer-info">
-        MAIN에는 최근 작업 5개만 노출<br>
-        프로젝트 상세페이지에서 더 많은 컷과 정보 확장<br>
-        인스타그램과 홈페이지 피드 연동 구조 반영
+        작은 공간 하나에도 정성을 다합니다.<br>
+        상담부터 준공 이후까지, 끝까지 함께하겠습니다.
       </div>
     </div>
     <div class="signature">
       <span>TODAH · תודה · GRATITUDE</span>
       <span>© TODAH DESIGN</span>
+      <span><a href="/privacy.html">개인정보처리방침</a> · <a href="/terms.html">이용약관</a></span>
     </div>
   </div>
 </footer>
 
 <div class="mobile-bar">
-  <a href="#">CALL</a>
-  <a href="#">KAKAO</a>
-  <a href="#">E-MAIL</a>
+  <a href="#" data-open-contact-modal>문의하기</a>
+  <a href="https://pf.kakao.com/_xcVUaX/chat" target="_blank" rel="noopener noreferrer">KAKAO</a>
+  <a data-mail-template href="mailto:todahid153@gmail.com">E-MAIL</a>
 </div>
 
 <script src="assets/js/main.js"></script>
+<script src="assets/js/hero-motion.js"></script>
 </body>
 </html>

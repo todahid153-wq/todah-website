@@ -1,0 +1,41 @@
+
+.hero-slide:nth-child(2n) img{animation-name:heroMoveAlt}
+@keyframes heroMoveAlt{
+  0%{transform:scale(1.10) translate3d(0.8%,-0.4%,0)}
+  100%{transform:scale(1.04) translate3d(-0.8%,0.4%,0)}
+}
+.hero-slide::after{background:linear-gradient(to top,rgba(0,0,0,.42),rgba(0,0,0,.08) 45%,rgba(0,0,0,0))}
+
+.hero-text{position:absolute;left:clamp(24px,4vw,64px);bottom:clamp(64px,9vh,110px);z-index:3;color:#fff;max-width:640px}
+.hero-text .line{display:block;overflow:hidden}
+.hero-text .line > span{display:block;transform:translateY(105%);transition:transform 1.1s cubic-bezier(.2,.7,.1,1)}
+.hero-text .tag{font-size:11px;letter-spacing:.24em;opacity:.9;margin-bottom:14px}
+.hero-text .title{font-family:var(--font-serif);font-weight:300;font-size:clamp(28px,3.4vw,52px);line-height:1.22;letter-spacing:-.01em}
+.hero-slide.active .hero-text .line > span{transform:translateY(0)}
+.hero-slide.active .hero-text .line:nth-child(1) > span{transition-delay:.55s}
+.hero-slide.active .hero-text .line:nth-child(2) > span{transition-delay:.75s}
+.hero-slide.active .hero-text .line:nth-child(3) > span{transition-delay:.95s}
+
+.hero-dot{position:relative;overflow:hidden}
+.hero-dot.active{background:rgba(255,255,255,.35)}
+.hero-dot.active::after{content:"";position:absolute;inset:0;background:#fff;transform-origin:left;animation:heroProgress 4.5s linear both}
+.hero-media:hover .hero-dot.active::after{animation-play-state:paused}
+@keyframes heroProgress{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+.hero-copy .kicker,.hero-copy h1,.hero-copy .link{opacity:0;transform:translateY(18px);animation:heroRise 1s cubic-bezier(.2,.7,.1,1) forwards}
+.hero-copy .kicker{animation-delay:.2s}
+.hero-copy h1{animation-delay:.4s}
+.hero-copy .link{animation-delay:.7s}
+@keyframes heroRise{to{opacity:1;transform:none}}
+
+@media(max-width:640px){
+  .hero-text{bottom:56px;right:24px}
+}
+@media (prefers-reduced-motion: reduce){
+  .hero-text .line > span{transform:none;transition:none}
+  .hero-dot.active::after{animation:none;transform:none}
+  .hero-copy .kicker,.hero-copy h1,.hero-copy .link{opacity:1;transform:none;animation:none}
+}
+.hero-copy{padding:0 clamp(24px,4vw,64px)}
+@media(max-width:640px){.hero-caption{display:none}}
+.hero-copy h1{font-size:clamp(32px,3.4vw,52px);line-height:1.12}
