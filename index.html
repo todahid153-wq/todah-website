@@ -68,11 +68,13 @@
 
   <div class="feature-grid">
     <article class="feature-image">
-      <img src="assets/images/sanun-living.jpg" alt="Pangyo Sanun Residence living room"/>
-      <div class="meta">
-        <div class="name">Pangyo Sanun Residence<br/>Living Room</div>
-        <div class="info">RESIDENTIAL · 38PY</div>
-      </div>
+      <a class="feature-link" href="/projects/sanun-38.html" aria-label="판교 산운마을 38평 프로젝트 보기">
+        <img src="assets/images/sanun-living.jpg" alt="Pangyo Sanun Residence living room"/>
+        <div class="meta">
+          <div class="name">Pangyo Sanun Residence<br/>Living Room</div>
+          <div class="info">RESIDENTIAL · 38PY<br/>VIEW PROJECT →</div>
+        </div>
+      </a>
     </article>
 
     <div class="feature-side">
@@ -298,6 +300,19 @@
         <label for="cf-photos">참고 사진 (포트폴리오/현장 사진)</label>
         <input type="file" id="cf-photos" name="photos" accept="image/*" multiple/>
         <span class="field-hint">이미지 파일, 최대 10장, 장당 10MB</span>
+      </div>
+
+      <div class="contact-field">
+        <label for="cf-source">알게 된 경로 <span class="field-opt">(선택)</span></label>
+        <select id="cf-source" name="source">
+          <option value="">선택해 주세요</option>
+          <option value="인스타그램">인스타그램</option>
+          <option value="네이버 블로그">네이버 블로그</option>
+          <option value="유튜브">유튜브</option>
+          <option value="검색(네이버·구글)">검색 (네이버·구글)</option>
+          <option value="지인 소개">지인 소개</option>
+          <option value="기타">기타</option>
+        </select>
       </div>
 
       <div class="contact-hp" aria-hidden="true"><label>웹사이트<input type="text" name="website" tabindex="-1" autocomplete="off"/></label></div>

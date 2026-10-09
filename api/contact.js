@@ -15,10 +15,12 @@ const FIELDS = [
   ['scope', '공사 범위'],
   ['startDate', '공사 예정일'],
   ['endDate', '공사 마감일'],
-  ['content', '공사 내용']
+  ['content', '공사 내용'],
+  ['source', '알게 된 경로']
 ];
 
-const MAX_LEN = { spaceType: 20, size: 10, address: 200, name: 60, contact: 60, email: 120, budget: 15, scope: 20, startDate: 10, endDate: 10, content: 3000 };
+const MAX_LEN = { spaceType: 20, size: 10, address: 200, name: 60, contact: 60, email: 120, budget: 15, scope: 20, startDate: 10, endDate: 10, content: 3000, source: 20 };
+const SOURCES = new Set(['인스타그램', '네이버 블로그', '유튜브', '검색(네이버·구글)', '지인 소개', '기타']);
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -56,6 +58,7 @@ export default async function handler(req, res) {
   }
   if (!EMAIL.test(clean.email)) return fail(res, 400, '이메일 형식을 확인해주세요.');
   if (clean.contact.replace(/\D/g, '').length < 8) return fail(res, 400, '연락처를 확인해주세요.');
+  if (clean.source && !SOURCES.has(clean.source)) return fail(res, 400, '입력값이 올바르지 않습니다.');
   if (clean.size && !/^\d+(\.\d+)?$/.test(clean.size)) return fail(res, 400, '평형은 숫자로 입력해주세요.');
   if (clean.budget && !/^\d+$/.test(clean.budget)) return fail(res, 400, '예산은 숫자로 입력해주세요.');
   for (const k of ['startDate', 'endDate']) {

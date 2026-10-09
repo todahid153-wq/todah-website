@@ -190,6 +190,8 @@
     if(e.key === 'Escape' && !overlay.hidden) closeModal();
   });
 
+  if(new URLSearchParams(location.search).has('inquiry')) openModal();
+
   const form = document.getElementById('contactForm');
   const status = document.getElementById('contactFormStatus');
   const submitBtn = form.querySelector('.contact-submit');
@@ -244,6 +246,7 @@
         endDate: tbdCheckbox.checked ? '' : form.endDate.value,
         endDateTBD: tbdCheckbox.checked,
         content: form.content.value.trim(),
+        source: form.source.value,
         photos,
         token,
         website: form.website.value

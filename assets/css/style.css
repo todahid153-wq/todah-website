@@ -220,3 +220,10 @@ footer{padding:56px 0 32px;border-top:1px solid var(--line);font-size:12px}
 }
 
 .contact-hp{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.feature-link{display:block}
+.feature-link img{transition:opacity .3s ease}
+.feature-link:hover img{opacity:.88}
+.feature-link .info{line-height:1.7}
+.contact-field select{font:inherit;font-size:15px;color:var(--text);background:transparent;border:none;border-bottom:1px solid var(--line);border-radius:0;padding:10px 2px;cursor:pointer}
+.contact-field select:focus{outline:none;border-bottom-color:var(--text)}
+.field-opt{color:var(--muted);letter-spacing:0}
